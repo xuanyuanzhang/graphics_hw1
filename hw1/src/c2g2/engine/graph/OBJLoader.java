@@ -11,7 +11,7 @@ import org.joml.Vector3f;
 
 
 public class OBJLoader {
-    public static Mesh loadMesh(String fileName) throws Exception {
+    /*public static Mesh loadMesh(String fileName) throws Exception {
     	//// --- student code ---
     	
     	float[] positions;
@@ -29,61 +29,7 @@ public class OBJLoader {
         //textCoords[0]=v[0].texture_coordinates.x textCoords[1]=v[0].texture_coordinates.y textCoords[2]=v[1].texture_coordinates.x ...
         //norms[0]=v[0].normals.x norms[1]=v[0].normals.y norms[2]=v[0].normals.z norms[3]=v[1].normals.x...
         //indices[0]=face[0].ind[0] indices[1]=face[0].ind[1] indices[2]=face[0].ind[2] indices[3]=face[1].ind[0]...(assuming all the faces are triangle face)
-    	/*positions = new float[]{1.0f, -1.0f, -1.0f,
-        		1.0f, -1.0f, 1.0f,
-        		-1.0f, -1.0f, 1.0f,
-        		-1.0f, -1.0f, -1.0f,
-        		1.0f, 1.0f, -1.0f,
-        		1.0f, 1.0f, 1.0f,
-        		-1.0f, 1.0f, 1.0f,
-        		-1.0f, 1.0f, -1.0f,
-        		1.0f, -1.0f, -1.0f,
-        		1.0f, -1.0f, -1.0f,
-        		1.0f, -1.0f, 1.0f,
-        		1.0f, -1.0f, 1.0f,
-        		-1.0f, -1.0f, -1.0f,
-        		-1.0f, -1.0f, -1.0f,
-        		1.0f, 1.0f, -1.0f,
-        		1.0f, 1.0f, -1.0f,
-        		-1.0f, -1.0f, 1.0f,
-        		-1.0f, -1.0f, 1.0f,
-        		1.0f, 1.0f, 1.0f,
-        		1.0f, 1.0f, 1.0f,
-        		-1.0f, 1.0f, 1.0f,
-        		-1.0f, 1.0f, 1.0f,
-        		-1.0f, 1.0f, -1.0f,
-        		-1.0f, 1.0f, -1.0f}; 
-    	textCoords = new float[]{0.50f, 1.0f,
-    			0.50f, 0.50f,
-    			1.0f, 0.50f,
-    			0.0f, 0.50f,
-    			0.0f, 0.0f,
-    			0.50f, 0.0f,
-    			0.0f, 1.0f,
-    			0.00020f, 1.0f,
-    			0.50f, 1.0f,
-    			1.0f, 1.0f};
-    	norms = new float[]{0.0f, -1.0f, 0.0f,
-    			0.0f, 1.0f, 0.0f,
-    			1.0f, 0.0f, 0.0f,
-    			0.0f, 0.0f, 1.0f,
-    			-1.0f, 0.0f, 0.0f,
-    			0.0f, 0.0f, -1.0f};
-    	indices = new int[]{11,1,1,17,2,1,13,3,1,
-    			24,4,2,22,5,2,20,6,2,
-    			15,1,3,19,7,3,12,4,3,
-    			6,1,4,21,8,4,18,4,4,
-    			3,2,5,7,9,5,23,7,5,
-    			1,4,6,4,2,6,8,1,6,
-    			9,10,1,11,1,1,13,3,1,
-    			16,2,2,24,4,2,20,6,2,
-    			10,2,3,15,1,3,12,4,3,
-    			2,2,4,6,1,4,18,4,4,
-    			14,4,5,3,2,5,23,7,5,
-    			5,7,6,1,4,6,8,1,6};
-        for(int i=0;i<indices.length;i++){
-        	indices[i] --;
-        }*/
+    	
         
     	ArrayList<String> input = new ArrayList<String>();
       	
@@ -146,21 +92,21 @@ public class OBJLoader {
   				//System.out.println("yes?");
   				for(int j=1;j<l;j++){
   					positions[position_count] = Float.valueOf(output[j]);
-  					//System.out.println("first number is: "+ positions[position_count]);
+  					System.out.println(positions[position_count]);
   					position_count ++;
   				}
   			}
   			else if(output[0].equals("vt")){
   				for(int j=1;j<l;j++){
   					textCoords[textCoords_count] = Float.valueOf(output[j]);
-  					//System.out.println("first number is: "+ textCoords[textCoords_count]);
+  					System.out.println(textCoords[textCoords_count]);
   					textCoords_count ++;
   				}
   			}
   			else if(output[0].equals("vn")){
   				for(int j=1;j<l;j++){
   					norms[norms_count] = Float.valueOf(output[j]);
-  					//System.out.println("first number is: "+ norms[norms_count]);
+  					System.out.println(norms[norms_count]);
   					norms_count ++;
   				}
   			}
@@ -189,6 +135,161 @@ public class OBJLoader {
           }
         
         return new Mesh(positions, textCoords, norms, indices);
+    }*/
+    
+    private static Vector3f convertVertex(String line){
+    	line = line.replaceAll("\\s+", " ");
+    	String[] s = line.split(" ");
+    	float x = Float.valueOf(s[1]);
+    	float y = Float.valueOf(s[2]);
+    	float z = Float.valueOf(s[3]);
+    	Vector3f output = new Vector3f(x,y,z);
+    	return output;
     }
+    
+    private static Vector2f convertTexture(String line){
+    	line = line.replaceAll("\\s+", " ");
+    	String[] s = line.split(" ");
+    	float x = Float.valueOf(s[1]);
+    	float y = Float.valueOf(s[2]);
+    	Vector2f output = new Vector2f(x,y);
+    	return output;
+    }
+    
+    private static Vector3f convertNormal(String line){
+    	line = line.replaceAll("\\s+", " ");
+    	String[] s = line.split(" ");
+    	float x = Float.valueOf(s[1]);
+    	float y = Float.valueOf(s[2]);
+    	float z = Float.valueOf(s[3]);
+    	Vector3f output = new Vector3f(x,y,z);
+    	return output;
+    }
+    
+    private static int[] convertFace(String line){
+    	line = line.replaceAll("\\s+"," ");
+    	String[] s = line.split(" ");
+    	int count = 0;//number of elements
+    	if(s[1].length()==1)
+    		count = 1;
+    	else{
+			for(int j=0;j<s[1].length()-1;j++){
+				if(s[1].charAt(j)=='/' && s[1].charAt(j+1)=='/'){
+					count = 2;
+					break;
+				}
+				else if(s[1].charAt(j)=='/')
+					count = 3;
+			}
+			if(count==0)
+				count = 1;
+    	}
+    	//System.out.println("count is: "+count);
+    	int[] output = new int[3];
+		if(count==1){
+			output[0] = Integer.valueOf(s[1]);
+			output[1] = Integer.valueOf(s[2]);
+			output[2] = Integer.valueOf(s[3]);
+		}
+		else if(count==2){
+			String[] temp1 = s[1].split("//");
+			output[0] = Integer.valueOf(temp1[0]);
+			String[] temp2 = s[2].split("//");
+			output[1] = Integer.valueOf(temp2[0]);
+			String[] temp3 = s[3].split("//");
+			output[2] = Integer.valueOf(temp3[0]);
+		}
+		else{
+			String[] temp1 = s[1].split("/");
+			output[0] = Integer.valueOf(temp1[0]);
+			String[] temp2 = s[2].split("/");
+			output[1] = Integer.valueOf(temp2[0]);
+			String[] temp3 = s[3].split("/");
+			output[2] = Integer.valueOf(temp3[0]);
+		}
+		//System.out.print(output.x+" ");
+		//System.out.print(output.y+" ");
+		//System.out.print(output.z+"\n");
+		
+    	return output;
+    }
+    
+    public static Mesh loadMesh(String fileName) throws Exception {
+    	//// --- student code ---
+    	
+    	List<Float> ListP = new ArrayList<Float>();
+    	List<Float> ListT = new ArrayList<Float>();
+    	List<Float> ListN = new ArrayList<Float>();
+    	List<Integer> ListI = new ArrayList<Integer>();
+    	
+  		
+        BufferedReader br = new BufferedReader(new FileReader(fileName));
+        
+        String line;
+        while((line=br.readLine())!=null){
+        	System.out.println(line);
+        	if(line.split(" ")[0].equals("v")){
+        		//System.out.println("yes it is vertex");
+        		Vector3f output = convertVertex(line);
+        		ListP.add(output.x);
+        		ListP.add(output.y);
+        		ListP.add(output.z);
+        	}
+        	else if(line.split(" ")[0].equals("vt")){
+        		Vector2f output = convertTexture(line);
+        		ListT.add(output.x);
+        		ListT.add(output.y);
+        	}
+        	else if(line.split(" ")[0].equals("vn")){
+        		Vector3f output = convertNormal(line);
+        		ListN.add(output.x);
+        		ListN.add(output.y);
+        		ListN.add(output.z);
+        	}
+        	else if(line.split(" ")[0].equals("f")){
+        		int[] output = convertFace(line);
+        		ListI.add(output[0]);
+        		ListI.add(output[1]);
+        		ListI.add(output[2]);
+        	}
+        }
+        br.close();
+        float[] positions = new float[ListP.size()];
+        System.out.println(ListP.size());
+        System.out.println("vertices are: ");
+        for(int i=0;i<ListP.size();i++){
+        	positions[i] = ListP.get(i);
+        	System.out.println(positions[i]+" ");
+        }
+        System.out.println("textures are: ");
+        float[] textCoords = new float[ListT.size()];
+        for(int i=0;i<ListT.size();i++){
+        	textCoords[i] = ListT.get(i);
+        	System.out.println(textCoords[i]+" ");
+        }
+        System.out.println("normals are: ");
+        float[] norms = new float[ListN.size()];
+        for(int i=0;i<ListN.size();i++){
+        	norms[i] = ListN.get(i);
+    		System.out.println(norms[i]+" ");
+        }
+        System.out.println("indices are: ");
+        int[] indices = new int[ListI.size()];
+        for(int i=0;i<ListI.size();i++){
+        	indices[i] = ListI.get(i)-1;
+    		System.out.println(indices[i]+" ");
+        }
+    	System.out.println("\n");
+    	
+    	return new Mesh(positions, textCoords, norms, indices);
+    }
+    
+    /*public static void main(String[] args) throws Exception{
+    	
+    	//Mesh m = OBJLoader.loadMesh("src/resources/models/cube.obj");
+    	System.out.println("\n");
+    	Mesh m2 = OBJLoader.loadMesh("src/resources/models/cube"
+    			+ ".obj");
+    }*/
 
 }
