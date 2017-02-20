@@ -9,6 +9,12 @@ import org.lwjgl.opengl.GL;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.MediaTracker;
+import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
+
 public class Window {
 
     private final String title;
@@ -22,6 +28,8 @@ public class Window {
     private boolean resized;
 
     private boolean vSync;
+    
+    private BufferedImage background;
     
     public Window(String title, int width, int height, boolean vSync) {
         this.title = title;
@@ -102,6 +110,7 @@ public class Window {
 
         // Set the clear color
         glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+        
         glEnable(GL_DEPTH_TEST);
     }
 
@@ -154,4 +163,13 @@ public class Window {
         glfwSwapBuffers(windowHandle);
         glfwPollEvents();
     }
+    
+    public void setBackgroundImage(){
+    	Image bgimage = null;
+    	bgimage = Toolkit.getDefaultToolkit().getImage("src/resources/space.jpg");
+    	
+    	BufferedImage bi;
+    	
+    }
+    
 }

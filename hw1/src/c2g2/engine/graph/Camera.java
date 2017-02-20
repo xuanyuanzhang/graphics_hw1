@@ -11,7 +11,7 @@ public class Camera {
     private final Vector3f rotation;
     
     public Camera() {
-        position = new Vector3f(2, 2, 3);
+        position = new Vector3f(0, 0, 0);
         rotation = new Vector3f(0, 0, 0);
         target = new Vector3f(0, 0, -1);
         up = new Vector3f(0, 1, 0);

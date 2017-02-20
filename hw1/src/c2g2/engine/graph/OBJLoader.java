@@ -227,7 +227,7 @@ public class OBJLoader {
         
         String line;
         while((line=br.readLine())!=null){
-        	System.out.println(line);
+        	//System.out.println(line);
         	if(line.split(" ")[0].equals("v")){
         		//System.out.println("yes it is vertex");
         		Vector3f output = convertVertex(line);
@@ -255,31 +255,31 @@ public class OBJLoader {
         }
         br.close();
         float[] positions = new float[ListP.size()];
-        System.out.println(ListP.size());
-        System.out.println("vertices are: ");
+        //System.out.println(ListP.size());
+        //System.out.println("vertices are: ");
         for(int i=0;i<ListP.size();i++){
         	positions[i] = ListP.get(i);
-        	System.out.println(positions[i]+" ");
+        	//System.out.println(positions[i]+" ");
         }
-        System.out.println("textures are: ");
+        //System.out.println("textures are: ");
         float[] textCoords = new float[ListT.size()];
         for(int i=0;i<ListT.size();i++){
         	textCoords[i] = ListT.get(i);
-        	System.out.println(textCoords[i]+" ");
+        	//System.out.println(textCoords[i]+" ");
         }
-        System.out.println("normals are: ");
+       // System.out.println("normals are: ");
         float[] norms = new float[ListN.size()];
         for(int i=0;i<ListN.size();i++){
         	norms[i] = ListN.get(i);
-    		System.out.println(norms[i]+" ");
+    		//System.out.println(norms[i]+" ");
         }
-        System.out.println("indices are: ");
+        //System.out.println("indices are: ");
         int[] indices = new int[ListI.size()];
         for(int i=0;i<ListI.size();i++){
         	indices[i] = ListI.get(i)-1;
-    		System.out.println(indices[i]+" ");
+    		//System.out.println(indices[i]+" ");
         }
-    	System.out.println("\n");
+    	//System.out.println("\n");
     	
     	return new Mesh(positions, textCoords, norms, indices);
     }

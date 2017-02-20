@@ -86,8 +86,8 @@ public class Renderer {
 //        	glViewport((window.getWidth()-side)/2, (window.getHeight()-side)/2, side, side);
             window.setResized(false);
         }
-        glViewport(0, 0, window.getWidth()*2, window.getHeight()*2);
-//        glViewport(0, 0, window.getWidth(), window.getHeight());
+//        glViewport(0, 0, window.getWidth()*2, window.getHeight()*2);
+        glViewport(0, 0, window.getWidth(), window.getHeight());
         shaderProgram.bind();
         
         // Update projection Matrix
