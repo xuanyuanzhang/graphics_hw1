@@ -110,13 +110,16 @@ public class Transformation {
         Vector3f position = gameItem.getPosition();
         modelMatrix.identity();
     	//// --- student code ---
-        Matrix4f test = new Matrix4f();
+        Vector3f xAxis = new Vector3f(1,0,0);
+        Vector3f yAxis = new Vector3f(0,1,0);
+        Vector3f zAxis = new Vector3f(0,0,1);
+        /*Matrix4f test = new Matrix4f();
     	test.identity();
         
         //modelMatrix.translate(position);
-        //Vector3f xAxis = new Vector3f(1,0,0);
-        //Vector3f yAxis = new Vector3f(0,1,0);
-        //Vector3f zAxis = new Vector3f(0,0,1);
+        Vector3f xAxis = new Vector3f(1,0,0);
+        Vector3f yAxis = new Vector3f(0,1,0);
+        Vector3f zAxis = new Vector3f(0,0,1);
         float sX = (float) Math.sin((float)Math.toRadians(rotation.x));
         float cX = (float) Math.cos((float)Math.toRadians(rotation.x));
         float sY = (float) Math.sin((float)Math.toRadians(rotation.y));
@@ -145,12 +148,12 @@ public class Transformation {
         									0,0,1,position.z,
         									0,0,0,1);
         
-        modelMatrix.mul(translation);
+        modelMatrix.mul(translation);*/
         
-        //modelMatrix.rotate((float)Math.toRadians(rotation.x),xAxis);
-        //modelMatrix.rotate((float)Math.toRadians(rotation.y),yAxis);
-        //modelMatrix.rotate((float)Math.toRadians(rotation.z),zAxis);
-        //modelMatrix.translate(position);
+        modelMatrix.rotate((float)Math.toRadians(rotation.x),xAxis);
+        modelMatrix.rotate((float)Math.toRadians(rotation.y),yAxis);
+        modelMatrix.rotate((float)Math.toRadians(rotation.z),zAxis);
+        modelMatrix.translate(position);
 
         return modelMatrix;
     }
@@ -194,26 +197,26 @@ public class Transformation {
         float cZ = (float) Math.cos((float)Math.toRadians(rotation.z));
         
         Matrix4f rotationX = new Matrix4f(1,0,0,0,
-        								  0,cX,-sX,0,
-        								  0,sX,cX,0,
+        								  0,cX,sX,0,
+        								  0,-sX,cX,0,
         								  0,0,0,1);
-        Matrix4f rotationY = new Matrix4f(cY,0,sY,0,
+        Matrix4f rotationY = new Matrix4f(cY,0,-sY,0,
         								  0,1,-0,0,
-        								  -sY,0,cY,0,
+        								  sY,0,cY,0,
         								  0,0,0,1);
-        Matrix4f rotationZ = new Matrix4f(cZ,-sZ,0,0,
-				  						  sZ,cZ,0,0,
+        Matrix4f rotationZ = new Matrix4f(cZ,sZ,0,0,
+				  						  -sZ,cZ,0,0,
 				  						  0,0,1,0,
 				  						  0,0,0,1);
         //modelMatrix.mul(rotationX);
-        modelMatrix.mul(rotationY);
         modelMatrix.mul(rotationX);
+        modelMatrix.mul(rotationY);
         modelMatrix.mul(rotationZ);
         
-        Matrix4f translation = new Matrix4f(1,0,0,position.x,
-        									0,1,0,position.y,
-        									0,0,1,position.z,
-        									0,0,0,1);
+        Matrix4f translation = new Matrix4f(1,0,0,0,
+        									0,1,0,0,
+        									0,0,1,0,
+        									position.x,position.y,position.z,1);
         
         modelMatrix.mul(translation);
         
@@ -232,40 +235,40 @@ public class Transformation {
     
     public static void main(String[] args){
     	Transformation t = new Transformation();
-    	Transformation t2 = new Transformation();
-    	Camera camera = new Camera();
-    	/*Matrix4f m = t.getViewMatrix(camera);
-    	System.out.println(m.m00()+" "+m.m01()+" "+m.m02()+" "+m.m03()+"\n"
-				  +m.m10()+" "+m.m11()+" "+m.m12()+" "+m.m13()+"\n"
-				  +m.m20()+" "+m.m21()+" "+m.m22()+" "+m.m23()+"\n"
-				  +m.m30()+" "+m.m31()+" "+m.m32()+" "+m.m33()+"\n\n");
-    	
-    	Matrix4f m2 = t2.getViewMatrix_2(camera);
-    	System.out.println(m2.m00()+" "+m2.m01()+" "+m2.m02()+" "+m2.m03()+"\n"
-		  		  +m2.m10()+" "+m2.m11()+" "+m2.m12()+" "+m2.m13()+"\n"
-		  		  +m2.m20()+" "+m2.m21()+" "+m2.m22()+" "+m2.m23()+"\n"
-		  		  +m2.m30()+" "+m2.m31()+" "+m2.m32()+" "+m2.m33()+"\n\n");
-    	//Matrix4f m3 = t.getViewMatrix(camera);
-    	m.mul(m2);
-    	System.out.println(m.m00()+" "+m.m01()+" "+m.m02()+" "+m.m03()+"\n"
-		  		  +m.m10()+" "+m.m11()+" "+m.m12()+" "+m.m13()+"\n"
-		  		  +m.m20()+" "+m.m21()+" "+m.m22()+" "+m.m23()+"\n"
-		  		  +m.m30()+" "+m.m31()+" "+m.m32()+" "+m.m33()+"\n\n");*/
-    	float FOV = (float) Math.toRadians(60.0f);
-        float Z_NEAR = 1f;
-        float Z_FAR = 1000.f;
-        
-        /*Matrix4f m = t.getModelMatrix(FOV, 600, 480, Z_NEAR, Z_FAR);
-    	System.out.println(m.m00()+" "+m.m01()+" "+m.m02()+" "+m.m03()+"\n"
-    					  +m.m10()+" "+m.m11()+" "+m.m12()+" "+m.m13()+"\n"
-    					  +m.m20()+" "+m.m21()+" "+m.m22()+" "+m.m23()+"\n"
-    					  +m.m30()+" "+m.m31()+" "+m.m32()+" "+m.m33()+"\n\n");
-    	Matrix4f m2 = t.getModelMatrix_2(FOV, 600, 480, Z_NEAR, Z_FAR);
-    	System.out.println(m2.m00()+" "+m2.m01()+" "+m2.m02()+" "+m2.m03()+"\n"
-				  		  +m2.m10()+" "+m2.m11()+" "+m2.m12()+" "+m2.m13()+"\n"
-				  		  +m2.m20()+" "+m2.m21()+" "+m2.m22()+" "+m2.m23()+"\n"
-				  		  +m2.m30()+" "+m2.m31()+" "+m2.m32()+" "+m2.m33()+"\n\n");*/
-        
+//    	Transformation t2 = new Transformation();
+//    	Camera camera = new Camera();
+//    	/*Matrix4f m = t.getViewMatrix(camera);
+//    	System.out.println(m.m00()+" "+m.m01()+" "+m.m02()+" "+m.m03()+"\n"
+//				  +m.m10()+" "+m.m11()+" "+m.m12()+" "+m.m13()+"\n"
+//				  +m.m20()+" "+m.m21()+" "+m.m22()+" "+m.m23()+"\n"
+//				  +m.m30()+" "+m.m31()+" "+m.m32()+" "+m.m33()+"\n\n");
+//    	
+//    	Matrix4f m2 = t2.getViewMatrix_2(camera);
+//    	System.out.println(m2.m00()+" "+m2.m01()+" "+m2.m02()+" "+m2.m03()+"\n"
+//		  		  +m2.m10()+" "+m2.m11()+" "+m2.m12()+" "+m2.m13()+"\n"
+//		  		  +m2.m20()+" "+m2.m21()+" "+m2.m22()+" "+m2.m23()+"\n"
+//		  		  +m2.m30()+" "+m2.m31()+" "+m2.m32()+" "+m2.m33()+"\n\n");
+//    	//Matrix4f m3 = t.getViewMatrix(camera);
+//    	m.mul(m2);
+//    	System.out.println(m.m00()+" "+m.m01()+" "+m.m02()+" "+m.m03()+"\n"
+//		  		  +m.m10()+" "+m.m11()+" "+m.m12()+" "+m.m13()+"\n"
+//		  		  +m.m20()+" "+m.m21()+" "+m.m22()+" "+m.m23()+"\n"
+//		  		  +m.m30()+" "+m.m31()+" "+m.m32()+" "+m.m33()+"\n\n");*/
+//    	float FOV = (float) Math.toRadians(60.0f);
+//        float Z_NEAR = 1f;
+//        float Z_FAR = 1000.f;
+//        
+//        /*Matrix4f m = t.getModelMatrix(FOV, 600, 480, Z_NEAR, Z_FAR);
+//    	System.out.println(m.m00()+" "+m.m01()+" "+m.m02()+" "+m.m03()+"\n"
+//    					  +m.m10()+" "+m.m11()+" "+m.m12()+" "+m.m13()+"\n"
+//    					  +m.m20()+" "+m.m21()+" "+m.m22()+" "+m.m23()+"\n"
+//    					  +m.m30()+" "+m.m31()+" "+m.m32()+" "+m.m33()+"\n\n");
+//    	Matrix4f m2 = t.getModelMatrix_2(FOV, 600, 480, Z_NEAR, Z_FAR);
+//    	System.out.println(m2.m00()+" "+m2.m01()+" "+m2.m02()+" "+m2.m03()+"\n"
+//				  		  +m2.m10()+" "+m2.m11()+" "+m2.m12()+" "+m2.m13()+"\n"
+//				  		  +m2.m20()+" "+m2.m21()+" "+m2.m22()+" "+m2.m23()+"\n"
+//				  		  +m2.m30()+" "+m2.m31()+" "+m2.m32()+" "+m2.m33()+"\n\n");*/
+//        
         Vector3f rotation = new Vector3f(2,1,3);
         Vector3f position = new Vector3f(1,2,3);
         

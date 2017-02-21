@@ -11,6 +11,8 @@ public class GameEngine implements Runnable {
     private final Thread gameLoopThread;
 
     private final Timer timer;
+    
+    private double InitTime;
 
     private final IGameLogic gameLogic;
 
@@ -32,6 +34,7 @@ public class GameEngine implements Runnable {
         } else {
             gameLoopThread.start();
         }
+        
     }
 
     @Override
@@ -59,6 +62,7 @@ public class GameEngine implements Runnable {
         float interval = 1f / TARGET_UPS;
 
         boolean running = true;
+        InitTime = timer.getTime();
         while (running && !window.windowShouldClose()) {
             elapsedTime = timer.getElapsedTime();
             accumulator += elapsedTime;
@@ -69,7 +73,7 @@ public class GameEngine implements Runnable {
                 update(interval);
                 accumulator -= interval;
             }
-
+            //System.out.println(timer.getTime()-InitTime);
             render();
 
             if ( !window.isvSync() ) {

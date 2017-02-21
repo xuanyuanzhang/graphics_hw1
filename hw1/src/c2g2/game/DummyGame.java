@@ -7,6 +7,7 @@ import org.joml.Vector3f;
 import static org.lwjgl.glfw.GLFW.*;
 
 import c2g2.engine.GameItem;
+import c2g2.engine.GameEngine;
 import c2g2.engine.IGameLogic;
 import c2g2.engine.MouseInput;
 import c2g2.engine.Window;
@@ -23,9 +24,13 @@ public class DummyGame implements IGameLogic {
     
     private static final float SCALE_STEP = 0.01f;
     
-    private static final float TRANSLATE_STEP = 0.01f;
+    private static final float TRANSLATE_STEP = 0.1f;
     
     private static final float ROTATION_STEP = 0.3f;
+    
+    //private float rocket_acceleration = 0.1f;
+    
+    //private double time;
 
     private final Vector3f cameraInc;
 
@@ -63,22 +68,55 @@ public class DummyGame implements IGameLogic {
         //   please uncomment following lines to test your OBJ Loader.
         Mesh mesh = OBJLoader.loadMesh("src/resources/models/cube.obj");
 //        Mesh mesh = new Mesh();  // comment this line when you enable OBJLoader
-        Material material = new Material(new Vector3f(0.2f, 0.2f, 0.2f), reflectance);
+        Material material = new Material(new Vector3f(1f, 0f, 0f), reflectance);
         mesh.setMaterial(material);
         GameItem gameItem1 = new GameItem(mesh);
         //gameItem1.setPosition(-2, -2, -2);
-        gameItem1.setScale(0.01f);
-        gameItem1.setPosition(5, -5, 0);
+        gameItem1.setScale(0.001f);
+        gameItem1.setPosition(5, 0, -10);
         //gameItem1.setRotation(15, -15, 0);
         
-        Mesh mesh2 = OBJLoader.loadMesh("src/resources/models/bunny.obj");
-        Material material2 = new Material(new Vector3f(0.4f, 0.5f, 0.2f), reflectance);
+        //Mesh mesh2 = OBJLoader.loadMesh("src/resources/models/3d-model.obj");
+        Mesh mesh2 = OBJLoader.loadMesh("src/resources/models/teapot.obj");
+        Material material2 = new Material(new Vector3f(1f, 1f, 1f), reflectance);
         mesh2.setMaterial(material2);
         GameItem gameItem2 = new GameItem(mesh2);
-        //gameItem2.setScale(0.01f);
-        //gameItem2.setPosition(5, -5, -100);
-        gameItems = new GameItem[]{gameItem2};
-
+        gameItem2.setScale(5f);
+        gameItem2.setPosition(0, 0, 0);
+        gameItems = new GameItem[81];
+        gameItems[0] = gameItem2;
+        
+        Mesh boxes = OBJLoader.loadMesh("src/resources/models/cube.obj");
+        boxes.setMaterial(material);
+        int round=0;
+        while(round<10){
+        	GameItem item1 = new GameItem(boxes);
+        	item1.setPosition(5, 0, -5*round-5);
+        	gameItems[8*round+1] = item1;
+        	GameItem item2 = new GameItem(boxes);
+        	item2.setPosition(-5, 0, -5*round-5);
+        	gameItems[8*round+2] = item2;
+        	GameItem item3 = new GameItem(boxes);
+        	item3.setPosition(5, 0, 5*round+5);
+        	gameItems[8*round+3] = item3;
+        	GameItem item4 = new GameItem(boxes);
+        	item4.setPosition(-5, 0, 5*round+5);
+        	gameItems[8*round+4] = item4;
+        	
+        	GameItem item5 = new GameItem(boxes);
+        	item5.setPosition(-5*round-5, 0, 5);
+        	gameItems[8*round+5] = item5;
+        	GameItem item6 = new GameItem(boxes);
+        	item6.setPosition(-5*round-5, 0, -5);
+        	gameItems[8*round+6] = item6;
+        	GameItem item7 = new GameItem(boxes);
+        	item7.setPosition(5*round+5, 0, 5);
+        	gameItems[8*round+7] = item7;
+        	GameItem item8 = new GameItem(boxes);
+        	item8.setPosition(5*round+5, 0, -5);
+        	gameItems[8*round+8] = item8;
+        	round++;
+        }
         
         ambientLight = new Vector3f(0.2f, 0.6f, 0.6f);
         Vector3f lightColour = new Vector3f(1, 1, 1);
@@ -91,6 +129,8 @@ public class DummyGame implements IGameLogic {
         lightPosition = new Vector3f(-1, 0, 0);
         lightColour = new Vector3f(1, 1, 1);
         directionalLight = new DirectionalLight(lightColour, lightPosition, lightIntensity);
+        
+        
     }
 
     @Override
@@ -116,37 +156,44 @@ public class DummyGame implements IGameLogic {
     		float curr = gameItems[currentObj].getScale();
     		gameItems[currentObj].setScale(curr-SCALE_STEP);
     	}
-    	/*
+    	
     	else if(window.isKeyPressed(GLFW_KEY_T)){
     		//move object x by step
     		Vector3f curr = gameItems[currentObj].getPosition();
     		gameItems[currentObj].setPosition(curr.x+TRANSLATE_STEP, curr.y, curr.z);
+    		System.out.println(gameItems[currentObj].getPosition().x);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_Y)){
     		//move object x by step
     		Vector3f curr = gameItems[currentObj].getPosition();
     		gameItems[currentObj].setPosition(curr.x-TRANSLATE_STEP, curr.y, curr.z);
+    		System.out.println(gameItems[currentObj].getPosition().x);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_U)){
     		//move object y by step
     		Vector3f curr = gameItems[currentObj].getPosition();
     		gameItems[currentObj].setPosition(curr.x, curr.y+TRANSLATE_STEP, curr.z);
+    		System.out.println(gameItems[currentObj].getPosition().y);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_I)){
     		//move object y by step
     		Vector3f curr = gameItems[currentObj].getPosition();
     		gameItems[currentObj].setPosition(curr.x, curr.y-TRANSLATE_STEP, curr.z);
+    		System.out.println(gameItems[currentObj].getPosition().y);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_O)){
     		//move object z by step
     		Vector3f curr = gameItems[currentObj].getPosition();
     		gameItems[currentObj].setPosition(curr.x, curr.y, curr.z+TRANSLATE_STEP);
+    		System.out.println(gameItems[currentObj].getPosition().z);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_P)){
     		//move object z by step
     		Vector3f curr = gameItems[currentObj].getPosition();
     		gameItems[currentObj].setPosition(curr.x, curr.y, curr.z-TRANSLATE_STEP);
-    	}*/
+    		System.out.println(gameItems[currentObj].getPosition().z);
+    	}
+    	
     	else if(window.isKeyPressed(GLFW_KEY_A)){
     		//rotate object at x axis
     		Vector3f curr = gameItems[currentObj].getRotation();
@@ -177,6 +224,7 @@ public class DummyGame implements IGameLogic {
     		Vector3f curr = gameItems[currentObj].getRotation();
     		gameItems[currentObj].setRotation(curr.x, curr.y, curr.z-ROTATION_STEP);
     	}
+    	
     	/*else if(window.isKeyPressed(GLFW_KEY_0)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0f,0.05f,1f));
@@ -214,57 +262,69 @@ public class DummyGame implements IGameLogic {
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().rotateMesh(new Vector3f(0,1,0), -1);
     	}
-    	
+    	/*
     	else if(window.isKeyPressed(GLFW_KEY_T)){
     		//rotation by manipulating mesh
     		System.out.println("right shift");
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0.005f,0f,0f));
+    		System.out.println(gameItems[currentObj].getPosition().x);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_Y)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(-0.005f,0f,0f));
+    		System.out.println(gameItems[currentObj].getPosition().x);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_O)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0f,0f,0.005f));
+    		System.out.println(gameItems[currentObj].getPosition().z);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_P)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0f,0f,-0.005f));
+    		System.out.println(gameItems[currentObj].getPosition().z);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_U)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0f,0.005f,0f));
+    		System.out.println(gameItems[currentObj].getPosition().y);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_I)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0f,-0.005f,0f));
+    		System.out.println(gameItems[currentObj].getPosition().y);
     	}
-    	
+    	*/
     	else if(window.isKeyPressed(GLFW_KEY_RIGHT)){
     		//rotation by manipulating mesh
     		System.out.println("right shift");
     		camera.setPosition(camera.getPosition().x, camera.getPosition().y+0.1f, camera.getPosition().z);
+    		System.out.println(camera.getPosition().y);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_LEFT)){
     		//rotation by manipulating mesh
     		camera.setPosition(camera.getPosition().x, camera.getPosition().y-0.1f, camera.getPosition().z);
+    		System.out.println(camera.getPosition().y);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_UP)){
     		//rotation by manipulating mesh
     		camera.setPosition(camera.getPosition().x+0.1f, camera.getPosition().y, camera.getPosition().z);
+    		System.out.println(camera.getPosition().x);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_DOWN)){
     		//rotation by manipulating mesh
     		camera.setPosition(camera.getPosition().x-0.1f, camera.getPosition().y, camera.getPosition().z);
+    		System.out.println(camera.getPosition().x);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_LEFT_BRACKET)){
     		//rotation by manipulating mesh
     		camera.setPosition(camera.getPosition().x, camera.getPosition().y, camera.getPosition().z+0.1f);
+    		System.out.println(camera.getPosition().z);
     	}
     	else if(window.isKeyPressed(GLFW_KEY_RIGHT_BRACKET)){
     		//rotation by manipulating mesh
     		camera.setPosition(camera.getPosition().x, camera.getPosition().y, camera.getPosition().z-0.1f);
+    		System.out.println(camera.getPosition().z);
     	}
     	
     	else if(window.isKeyPressed(GLFW_KEY_2)){
