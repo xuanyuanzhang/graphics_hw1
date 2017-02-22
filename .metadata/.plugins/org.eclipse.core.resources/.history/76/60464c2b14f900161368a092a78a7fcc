@@ -1,0 +1,24 @@
+package c2g2.game;
+
+public class RotationLock {
+	
+	private float rotationAngle = 0;
+
+	public RotationLock(){
+		
+	}
+	
+	public void increment(float angle){
+		rotationAngle+=angle;
+	}
+	
+	public boolean canRotate(){
+		if(rotationAngle<90.0f && rotationAngle>-90)
+			return true;
+		return false;
+	}
+	
+	public void free(){
+		rotationAngle = 0;
+	}
+}

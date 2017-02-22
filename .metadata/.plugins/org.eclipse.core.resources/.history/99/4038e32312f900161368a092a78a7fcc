@@ -1,0 +1,5 @@
+package c2g2.game;
+
+public class PositionLock {
+
+}
