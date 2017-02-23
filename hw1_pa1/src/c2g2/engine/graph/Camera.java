@@ -8,19 +8,13 @@ public class Camera {
     private Vector3f target;
     private Vector3f up;
     
-    private double angle=0;
-    
     private final Vector3f rotation;
     
     public Camera() {
-        position = new Vector3f(2, 0, 0);
-    	//position = new Vector3f(0,0,0);
+        position = new Vector3f(0, 0, 0);
         rotation = new Vector3f(0, 0, 0);
-        target = new Vector3f(2, 1, 0);
-        //target = new Vector3f((float)Math.sin(angle),(float)Math.cos(angle),0);
-        //System.out.println("sin is: "+(float)Math.sin(angle)+" cos is: "+(float)Math.cos(angle));
-        //up = new Vector3f(0, 1, 0);
-        up = new Vector3f(0,0,1);
+        target = new Vector3f(0, 0, -1);
+        up = new Vector3f(0,1,0);
     }
     
     public Camera(Vector3f position, Vector3f rotation) {

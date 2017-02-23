@@ -1216,3 +1216,169 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.jface.text 2 0 2017-02-22 13:32:48.850
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-02-22 13:50:43.765 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-22 13:50:55.967
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xz258'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 4 0 2017-02-22 13:50:57.971
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
+' #12167.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-22 14:11:01.541
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-22 14:11:01.572
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-02-22 14:11:01.967
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\rt.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\gdx-twl.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\joml-1.9.2.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-egl.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-openal.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-par-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-par-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-par-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-par.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-sse.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-stb.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-javadoc.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-natives-windows.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-sources.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\lwjgl.jar
+  [+] C:\Users\xz258\Documents\graphics\jars\pngj-2.1.1.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-02-23 09:51:55.929 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-23 09:52:17.542
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xz258'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 4 0 2017-02-23 09:52:21.346
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
+' #12167.
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-23 10:09:51.243
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-02-23 10:09:51.280
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

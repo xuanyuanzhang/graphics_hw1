@@ -166,7 +166,7 @@ public class OBJLoader {
     	return output;
     }
     
-    private static int[] convertFace(String line){
+    private static Integer[][] convertFace(String line){
     	line = line.replaceAll("\\s+"," ");
     	String[] s = line.split(" ");
     	int count = 0;//number of elements
@@ -185,27 +185,27 @@ public class OBJLoader {
 				count = 1;
     	}
     	//System.out.println("count is: "+count);
-    	int[] output = new int[3];
+    	Integer[][] output = new Integer[3][];
 		if(count==1){
-			output[0] = Integer.valueOf(s[1]);
-			output[1] = Integer.valueOf(s[2]);
-			output[2] = Integer.valueOf(s[3]);
+			output[0] = new Integer[]{Integer.valueOf(s[1])-1};
+			output[1] = new Integer[]{Integer.valueOf(s[2])-1};
+			output[2] = new Integer[]{Integer.valueOf(s[3])-1};
 		}
 		else if(count==2){
 			String[] temp1 = s[1].split("//");
-			output[0] = Integer.valueOf(temp1[0]);
+			output[0] = new Integer[]{Integer.valueOf(temp1[0])-1,Integer.valueOf(temp1[1])-1};
 			String[] temp2 = s[2].split("//");
-			output[1] = Integer.valueOf(temp2[0]);
+			output[1] = new Integer[]{Integer.valueOf(temp2[0])-1,Integer.valueOf(temp2[1])-1};
 			String[] temp3 = s[3].split("//");
-			output[2] = Integer.valueOf(temp3[0]);
+			output[2] = new Integer[]{Integer.valueOf(temp3[0])-1,Integer.valueOf(temp3[1])-1};
 		}
 		else{
 			String[] temp1 = s[1].split("/");
-			output[0] = Integer.valueOf(temp1[0]);
+			output[0] = new Integer[]{Integer.valueOf(temp1[0])-1,Integer.valueOf(temp1[2])-1};
 			String[] temp2 = s[2].split("/");
-			output[1] = Integer.valueOf(temp2[0]);
+			output[1] = new Integer[]{Integer.valueOf(temp2[0])-1,Integer.valueOf(temp2[2])-1};
 			String[] temp3 = s[3].split("/");
-			output[2] = Integer.valueOf(temp3[0]);
+			output[2] = new Integer[]{Integer.valueOf(temp3[0])-1,Integer.valueOf(temp3[2])-1};
 		}
 		//System.out.print(output.x+" ");
 		//System.out.print(output.y+" ");
@@ -220,7 +220,7 @@ public class OBJLoader {
     	List<Float> ListP = new ArrayList<Float>();
     	List<Float> ListT = new ArrayList<Float>();
     	List<Float> ListN = new ArrayList<Float>();
-    	List<Integer> ListI = new ArrayList<Integer>();
+    	List<Integer[]> ListI = new ArrayList<Integer[]>();
     	
   		
         BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -247,7 +247,7 @@ public class OBJLoader {
         		ListN.add(output.z);
         	}
         	else if(line.split(" ")[0].equals("f")){
-        		int[] output = convertFace(line);
+        		Integer[][] output = convertFace(line);
         		ListI.add(output[0]);
         		ListI.add(output[1]);
         		ListI.add(output[2]);
@@ -268,16 +268,29 @@ public class OBJLoader {
         	//System.out.println(textCoords[i]+" ");
         }
        // System.out.println("normals are: ");
-        float[] norms = new float[ListN.size()];
+        float[] oldNorms = new float[ListN.size()];
         for(int i=0;i<ListN.size();i++){
-        	norms[i] = ListN.get(i);
+        	oldNorms[i] = ListN.get(i);
     		//System.out.println(norms[i]+" ");
         }
         //System.out.println("indices are: ");
         int[] indices = new int[ListI.size()];
         for(int i=0;i<ListI.size();i++){
-        	indices[i] = ListI.get(i)-1;
+        	indices[i] = ListI.get(i)[0];
     		//System.out.println(indices[i]+" ");
+        }
+        float[] norms;
+        if(ListI.get(0).length>1){
+        	norms = new float[ListP.size()];
+	        for(int i=0;i<ListI.size();i++){
+	        	//System.out.println(ListI.get(i).length-1);
+	        	//System.out.println(ListI.get(i)[ListI.get(i).length-1]);
+	        	//System.out.println(oldNorms[ListI.get(i)[ListI.get(i).length-1]]);
+	        	norms[ListI.get(i)[0]] = oldNorms[ListI.get(i)[ListI.get(i).length-1]];
+	        }
+        }
+        else{
+        	norms = oldNorms;
         }
     	//System.out.println("\n");
     	

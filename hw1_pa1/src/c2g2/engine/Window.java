@@ -29,8 +29,6 @@ public class Window {
 
     private boolean vSync;
     
-    private BufferedImage background;
-    
     public Window(String title, int width, int height, boolean vSync) {
         this.title = title;
         this.width = width;
@@ -162,14 +160,6 @@ public class Window {
     public void update() {
         glfwSwapBuffers(windowHandle);
         glfwPollEvents();
-    }
-    
-    public void setBackgroundImage(){
-    	Image bgimage = null;
-    	bgimage = Toolkit.getDefaultToolkit().getImage("src/resources/space.jpg");
-    	
-    	BufferedImage bi;
-    	
     }
     
 }
