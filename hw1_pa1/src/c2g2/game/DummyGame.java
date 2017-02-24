@@ -67,7 +67,7 @@ public class DummyGame implements IGameLogic {
         float reflectance = 1f;        
         // NOTE: 
         //   please uncomment following lines to test your OBJ Loader.
-        Mesh mesh = OBJLoader.loadMesh("src/resources/models/pumpkin.obj");
+        Mesh mesh = OBJLoader.loadMesh("src/resources/models/bunny.obj");
 //        Mesh mesh = new Mesh();  // comment this line when you enable OBJLoader
         Material material = new Material(new Vector3f(1f, 0f, 0f), reflectance);
         mesh.setMaterial(material);

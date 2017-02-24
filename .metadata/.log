@@ -1584,3 +1584,825 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !ENTRY org.eclipse.core.net 4 0 2017-02-23 21:20:45.746
 !MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
 ' #12167.
+!SESSION 2017-02-23 21:35:39.983 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-23 21:35:57.470
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xz258'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 4 0 2017-02-23 21:36:01.874
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
+' #12167.
+!SESSION 2017-02-23 21:39:04.672 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-23 21:39:21.358
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\xz258'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 4 0 2017-02-23 21:39:23.011
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error 'The proxy auto-configuration script could not be downloaded
+' #12167.
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.379
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\gdx-twl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.408
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\joml-1.9.2.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.431
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.462
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.487
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.488
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.511
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.537
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.559
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.584
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.586
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.609
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.631
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.655
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.679
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.681
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.704
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.725
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.747
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.772
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.794
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.818
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.841
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.868
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.890
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.916
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.958
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:30.997
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\gdx-twl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.039
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\joml-1.9.2.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.072
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.096
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.120
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.143
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.164
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.189
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.211
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.235
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.256
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.279
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.301
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.323
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.345
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.368
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.390
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.412
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.436
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.459
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.481
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.505
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.531
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.571
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.623
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.644
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.667
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\gdx-twl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.690
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.713
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.736
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.757
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\joml-1.9.2.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.779
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.802
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.824
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.845
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.869
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.891
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.917
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.943
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.969
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:31.993
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.021
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.052
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.076
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.097
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.122
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.144
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.168
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.189
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.212
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.236
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.258
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-assimp-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.280
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.304
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.325
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.348
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.372
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.394
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.418
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.442
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.464
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.489
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.512
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.536
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.559
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.584
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.607
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.629
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-bgfx-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.652
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.676
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.701
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.724
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.746
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.771
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.793
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.817
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.843
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.867
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.890
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.912
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-egl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.937
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.960
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:32.985
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.008
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.033
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.057
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.081
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.106
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.129
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.155
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.180
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.204
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.227
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.252
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.277
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.302
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-glfw-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.326
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.352
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.375
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.398
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.424
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.448
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.474
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.497
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.521
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.548
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.573
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.595
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.619
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.643
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.668
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.692
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jawt-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.717
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.741
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.764
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.790
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.814
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.840
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.863
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.890
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.917
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.942
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.969
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:33.992
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.018
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.042
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.067
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.090
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-jemalloc-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.114
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.140
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.164
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.189
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.213
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.237
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.262
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.286
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.311
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.336
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.360
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.385
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.411
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.436
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.460
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.485
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-lmdb-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.509
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.536
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.559
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.586
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.611
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.636
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.660
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.685
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.711
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.736
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.760
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.786
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.812
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.836
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.860
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.886
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nanovg-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.911
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.938
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.961
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:34.987
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.012
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.038
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.063
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\pngj-2.1.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.089
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.174
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.218
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.252
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.293
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.327
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nfd-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.355
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.385
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.416
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.450
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.479
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-nuklear-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.517
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.557
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.593
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.621
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.646
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.672
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.697
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-openal-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.723
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.750
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.776
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.802
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.828
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.853
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opencl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.879
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.905
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.931
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.958
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:35.985
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.010
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.036
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.061
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.086
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.111
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengles-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.137
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\pngj-2.1.1.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.162
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.222
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.263
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-opengl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.304
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.336
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.373
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.408
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-ovr-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.438
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.468
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.499
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.527
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-par-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.556
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.583
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.609
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.637
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.664
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-sse-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.693
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.720
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.746
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.773
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-stb-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.800
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.826
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.854
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.881
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-tinyfd-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.911
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.940
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.968
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-vulkan-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:36.994
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:37.023
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-javadoc.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:37.053
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-natives-windows.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:37.079
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\lwjgl-xxhash-sources.jar
+
+!ENTRY org.eclipse.jdt.core 4 0 2017-02-23 21:45:37.107
+!MESSAGE Invalid ZIP archive: C:\Users\xz258\Documents\graphics\jars\pngj-2.1.1.jar
+
+!ENTRY org.eclipse.jdt.launching 4 150 2017-02-23 21:45:37.255
+!MESSAGE The archive: C:/Users/xz258/Documents/graphics/jars/gdx-twl.jar which is referenced by the classpath, does not exist.
