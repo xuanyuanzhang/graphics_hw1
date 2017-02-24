@@ -217,7 +217,7 @@ public class Mesh {
     	setMesh(pos, textco, norms, inds);
     }
     
-    public void reflectMesh(Vector3f p, Vector3f n){
+    /*public void reflectMesh(Vector3f p, Vector3f n){
     	cleanUp();
     	//reset position of each point
     	//Do not change textco, norms, inds
@@ -248,6 +248,39 @@ public class Mesh {
     		pos[3*i] = (pos_x * m00 + pos_y * m01 + pos_z * m02)/divisor;
     		pos[3*i+1] = (pos_x * m10 + pos_y * m11 + pos_z * m12)/divisor;
     		pos[3*i+2] = (pos_x * m20 + pos_y * m21 + pos_z * m22)/divisor;
+    	}
+    	setMesh(pos, textco, norms, inds);
+    }*/
+    public void reflectMesh(Vector3f p, Vector3f n){
+    	cleanUp();
+    	//reset position of each point
+    	//Do not change textco, norms, inds
+    	//student code
+    	n.normalize();
+    	float d = p.x*n.x+p.y*n.y+p.z*n.z;
+    	
+    	float m00 = - 2 * n.x * n.x + 1.0F;
+	    float m01 = - 2 * n.x * n.y;
+	    float m02 = - 2 * n.x * n.z;
+        float m10 = - 2 * n.y * n.x;
+        float m11 = - 2 * n.y * n.y + 1.0F;
+        float m12 = - 2 * n.y * n.z;
+        float m20 = - 2 * n.z * n.x;
+        float m21 = - 2 * n.z * n.y;
+        float m22 = - 2 * n.z * n.z + 1.0F;
+        float m03 = - 2 * d * n.x;
+        float m13 = - 2 * d * n.y;
+        float m23 = - 2 * d * n.z;
+      
+        for(int i=0; i< pos.length/3; i++){
+        	float pos_x = pos[3*i];
+    		float pos_y = pos[3*i+1];
+    		float pos_z = pos[3*i+2];
+        	//Vector3f v = new Vector3f(pos[3*i],pos[3*i+1],pos[3*i+2]);
+    		//v = matrix.transformPosition(v);
+    		pos[3*i] = pos_x * m00 + pos_y * m01 + pos_z * m02 + m03;
+    		pos[3*i+1] = pos_x * m10 + pos_y * m11 + pos_z * m12 + m13;
+    		pos[3*i+2] = pos_x * m20 + pos_y * m21 + pos_z * m22 + m23;
     	}
     	setMesh(pos, textco, norms, inds);
     }

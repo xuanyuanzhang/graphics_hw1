@@ -181,7 +181,7 @@ public class DummyGame implements IGameLogic {
     		gameItems[currentObj].setRotation(curr.x, curr.y, curr.z-ROTATION_STEP);
     	}
     	
-    	else if(window.isKeyPressed(GLFW_KEY_0)){
+    	/*else if(window.isKeyPressed(GLFW_KEY_0)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().translateMesh(new Vector3f(0f,0.05f,1f));
     	}
@@ -196,12 +196,12 @@ public class DummyGame implements IGameLogic {
     	else if(window.isKeyPressed(GLFW_KEY_7)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().reflectMesh(new Vector3f(0f,1f,0f), new Vector3f(0f, 1f, 0f));
-    	}
+    	}*/
     	else if(window.isKeyPressed(GLFW_KEY_1)){
     		//get screenshot
     		renderer.writePNG(window);
     	}
-    	/*
+    	
     	else if(window.isKeyPressed(GLFW_KEY_9)){
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().rotateMesh(new Vector3f(1,0,0), 1);
@@ -226,7 +226,7 @@ public class DummyGame implements IGameLogic {
     		//rotation by manipulating mesh
     		gameItems[currentObj].getMesh().rotateMesh(new Vector3f(0,0,1), -1);
     	}
-    	*/
+    	
     	else if(window.isKeyPressed(GLFW_KEY_T)){
     		//rotation by manipulating mesh
     		System.out.println("right shift");
