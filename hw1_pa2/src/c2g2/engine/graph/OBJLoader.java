@@ -1,5 +1,6 @@
 package c2g2.engine.graph;
 
+import java.lang.Object;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
@@ -11,13 +12,6 @@ import org.joml.Vector3f;
 
 
 public class OBJLoader {
-    /*public static Mesh loadMesh(String fileName) throws Exception {
-    	//// --- student code ---
-    	
-    	float[] positions;
-    	float[] textCoords;
-    	float[] norms;
-    	int[] indices;
     	
     	//positions = new float[]{-0.5f,-0.5f,-0.5f,-0.5f,-0.5f,0.5f,-0.5f,0.5f,-0.5f,-0.5f,0.5f,0.5f,0.5f,-0.5f,-0.5f,0.5f,-0.5f,0.5f,0.5f,0.5f,-0.5f,0.5f,0.5f,0.5f}; 
     	//textCoords = new float[]{0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f,0.0f};
@@ -31,111 +25,6 @@ public class OBJLoader {
         //indices[0]=face[0].ind[0] indices[1]=face[0].ind[1] indices[2]=face[0].ind[2] indices[3]=face[1].ind[0]...(assuming all the faces are triangle face)
     	
         
-    	ArrayList<String> input = new ArrayList<String>();
-      	
-        int position_count = 0;
-  		int textCoords_count = 0;
-  		int norms_count = 0;
-  		int indices_count = 0;
-  		
-        BufferedReader br = new BufferedReader(new FileReader(fileName));
-      	try{
-      		String line = br.readLine();
-      		if(fileName.equals("src/resources/models/bunny.obj")){
-      			line = br.readLine();
-      			line = br.readLine();
-      			line = br.readLine();
-      		}
-      		
-      		while(line != null){
-      			//System.out.println(line);
-      			//System.out.println(line.charAt(0));
-      			if((line.charAt(0)=='v' || line.charAt(0)=='f')&&(line.charAt(4) < 'a' || line.charAt(4) > 'z')){
-      				//System.out.println(line);
-      				input.add(line);
-  	    			if(line.charAt(0)=='v' && line.charAt(1)==' '){
-  	    				position_count+=3;
-  	    			}
-  	    			else if(line.charAt(0)=='v' && line.charAt(1)=='t')
-  	    				textCoords_count+=2;
-  	    			else if(line.charAt(0)=='v' && line.charAt(1)=='n')
-  	    				norms_count+=3;
-  	    			else if(line.charAt(0)=='f')
-  	    				indices_count+=3;
-      			}
-      			line = br.readLine();
-      		}
-      	}finally{
-      		br.close();
-      	}
-      	positions = new float[position_count];
-        textCoords = new float[textCoords_count];
-        norms = new float[norms_count];
-        indices = new int[indices_count];
-      	
-        position_count = 0;
-  		textCoords_count = 0;
-  		norms_count = 0;
-  		indices_count = 0;
-          
-        for(int i=0;i<input.size();i++){
-        	String[] output;
-        	if(fileName.equals("src/resources/models/cube2.obj")){
-        		output = input.get(i).split("  ");
-        	}
-        	else{
-        		output = input.get(i).split(" ");
-        	}
-          	String[] arr;
-          	int l = output.length;
-  			if(output[0].equals("v")){
-  				//System.out.println("yes?");
-  				for(int j=1;j<l;j++){
-  					positions[position_count] = Float.valueOf(output[j]);
-  					System.out.println(positions[position_count]);
-  					position_count ++;
-  				}
-  			}
-  			else if(output[0].equals("vt")){
-  				for(int j=1;j<l;j++){
-  					textCoords[textCoords_count] = Float.valueOf(output[j]);
-  					System.out.println(textCoords[textCoords_count]);
-  					textCoords_count ++;
-  				}
-  			}
-  			else if(output[0].equals("vn")){
-  				for(int j=1;j<l;j++){
-  					norms[norms_count] = Float.valueOf(output[j]);
-  					System.out.println(norms[norms_count]);
-  					norms_count ++;
-  				}
-  			}
-  			
-  			else if(output[0].equals("f")){
-  				//int size = (fileName.equals("src/resources/models/bunny.obj") ? )
-  				for(int j=1;j<l;j++){
-  					if(fileName.equals("src/resources/models/bunny.obj")){
-  						arr = output[j].split("//");
-  					}
-  					else if(fileName.equals("src/resources/models/cube2.obj")){
-  						arr = output[j].split("  ");
-  					}
-  					else{
-  						arr = output[j].split("/");
-  					}
-  					//System.out.println(arr.length);
-  					System.out.println(arr[0]);
-					//System.out.println(arr[k]);
-					//System.out.println(indices_count);
-					indices[indices_count] = Integer.valueOf(arr[0])-1;
-					//System.out.println("first number is: "+ indices[indices_count]);
-					indices_count ++;
-  				}
-  			}
-          }
-        
-        return new Mesh(positions, textCoords, norms, indices);
-    }*/
     
     private static Vector3f convertVertex(String line){
     	line = line.replaceAll("\\s+", " ");
@@ -166,7 +55,7 @@ public class OBJLoader {
     	return output;
     }
     
-    private static int[] convertFace(String line){
+    private static Integer[][] convertFace(String line){
     	line = line.replaceAll("\\s+"," ");
     	String[] s = line.split(" ");
     	int count = 0;//number of elements
@@ -185,27 +74,27 @@ public class OBJLoader {
 				count = 1;
     	}
     	//System.out.println("count is: "+count);
-    	int[] output = new int[3];
+    	Integer[][] output = new Integer[3][];
 		if(count==1){
-			output[0] = Integer.valueOf(s[1]);
-			output[1] = Integer.valueOf(s[2]);
-			output[2] = Integer.valueOf(s[3]);
+			output[0] = new Integer[]{Integer.valueOf(s[1])-1};
+			output[1] = new Integer[]{Integer.valueOf(s[2])-1};
+			output[2] = new Integer[]{Integer.valueOf(s[3])-1};
 		}
 		else if(count==2){
 			String[] temp1 = s[1].split("//");
-			output[0] = Integer.valueOf(temp1[0]);
+			output[0] = new Integer[]{Integer.valueOf(temp1[0])-1,Integer.valueOf(temp1[1])-1};
 			String[] temp2 = s[2].split("//");
-			output[1] = Integer.valueOf(temp2[0]);
+			output[1] = new Integer[]{Integer.valueOf(temp2[0])-1,Integer.valueOf(temp2[1])-1};
 			String[] temp3 = s[3].split("//");
-			output[2] = Integer.valueOf(temp3[0]);
+			output[2] = new Integer[]{Integer.valueOf(temp3[0])-1,Integer.valueOf(temp3[1])-1};
 		}
 		else{
 			String[] temp1 = s[1].split("/");
-			output[0] = Integer.valueOf(temp1[0]);
+			output[0] = new Integer[]{Integer.valueOf(temp1[0])-1,Integer.valueOf(temp1[1])-1,Integer.valueOf(temp1[2])-1};
 			String[] temp2 = s[2].split("/");
-			output[1] = Integer.valueOf(temp2[0]);
+			output[1] = new Integer[]{Integer.valueOf(temp2[0])-1,Integer.valueOf(temp1[1])-1,Integer.valueOf(temp2[2])-1};
 			String[] temp3 = s[3].split("/");
-			output[2] = Integer.valueOf(temp3[0]);
+			output[2] = new Integer[]{Integer.valueOf(temp3[0])-1,Integer.valueOf(temp1[1])-1,Integer.valueOf(temp3[2])-1};
 		}
 		//System.out.print(output.x+" ");
 		//System.out.print(output.y+" ");
@@ -214,13 +103,34 @@ public class OBJLoader {
     	return output;
     }
     
+    public static void getNormsTextCoords(List<Integer[][]> ListI,
+    		List<Vector2f> ListT,List<Vector3f> ListN,List<Integer> indices,
+    		float[] norms,float[] textCoords){
+    	for(Integer[][] tuple : ListI){
+    		for(int i=0;i<3;i++){
+    			int index = tuple[i][0];
+    			indices.add(index);
+    			
+    			Vector2f texture = ListT.get(tuple[i][1]);
+    			textCoords[2*index] = texture.x;
+    			textCoords[2*index+1] = texture.y;
+    			
+    			Vector3f norm = ListN.get(tuple[i][2]);
+    			norms[3*index] = norm.x;
+    			norms[3*index+1] = norm.y;
+    			norms[3*index+2] = norm.z;
+    		}
+    	}
+    	
+    }
+    
     public static Mesh loadMesh(String fileName) throws Exception {
     	//// --- student code ---
     	
-    	List<Float> ListP = new ArrayList<Float>();
-    	List<Float> ListT = new ArrayList<Float>();
-    	List<Float> ListN = new ArrayList<Float>();
-    	List<Integer> ListI = new ArrayList<Integer>();
+    	List<Vector3f> ListP = new ArrayList<Vector3f>();
+    	List<Vector2f> ListT = new ArrayList<Vector2f>();
+    	List<Vector3f> ListN = new ArrayList<Vector3f>();
+    	List<Integer[][]> ListI = new ArrayList<Integer[][]>();
     	
   		
         BufferedReader br = new BufferedReader(new FileReader(fileName));
@@ -231,57 +141,90 @@ public class OBJLoader {
         	if(line.split(" ")[0].equals("v")){
         		//System.out.println("yes it is vertex");
         		Vector3f output = convertVertex(line);
-        		ListP.add(output.x);
-        		ListP.add(output.y);
-        		ListP.add(output.z);
+        		ListP.add(output);
         	}
         	else if(line.split(" ")[0].equals("vt")){
         		Vector2f output = convertTexture(line);
-        		ListT.add(output.x);
-        		ListT.add(output.y);
+        		ListT.add(output);
         	}
         	else if(line.split(" ")[0].equals("vn")){
         		Vector3f output = convertNormal(line);
-        		ListN.add(output.x);
-        		ListN.add(output.y);
-        		ListN.add(output.z);
+        		ListN.add(output);
         	}
         	else if(line.split(" ")[0].equals("f")){
-        		int[] output = convertFace(line);
-        		ListI.add(output[0]);
-        		ListI.add(output[1]);
-        		ListI.add(output[2]);
+        		Integer[][] output = convertFace(line);
+        		ListI.add(output);
         	}
         }
         br.close();
-        float[] positions = new float[ListP.size()];
+        float[] positions = new float[ListP.size()*3];
         //System.out.println(ListP.size());
         //System.out.println("vertices are: ");
         for(int i=0;i<ListP.size();i++){
-        	positions[i] = ListP.get(i);
+        	positions[3*i] = ListP.get(i).x;
+        	positions[3*i+1] = ListP.get(i).y;
+        	positions[3*i+2] = ListP.get(i).z;
         	//System.out.println(positions[i]+" ");
         }
-        //System.out.println("textures are: ");
-        float[] textCoords = new float[ListT.size()];
-        for(int i=0;i<ListT.size();i++){
-        	textCoords[i] = ListT.get(i);
-        	//System.out.println(textCoords[i]+" ");
+        
+        float[] norms = new float[ListP.size()*3];
+        float[] textCoords = new float[ListP.size()*2];
+        List<Integer> indices = new ArrayList<Integer>();
+        
+        if(ListI.get(0)[0].length==1){
+        	for(Integer[][] tuple : ListI){
+        		for(int i=0;i<3;i++){
+        			int index = tuple[i][0];
+        			indices.add(index);
+        			
+        			textCoords[2*index] = 0;
+        			textCoords[2*index+1] = 0;
+        			
+        			norms[3*index] = 0;
+        			norms[3*index+1] = 0;
+        			norms[3*index+2] = 0;
+        		}
+        	}
         }
-       // System.out.println("normals are: ");
-        float[] norms = new float[ListN.size()];
-        for(int i=0;i<ListN.size();i++){
-        	norms[i] = ListN.get(i);
-    		//System.out.println(norms[i]+" ");
+        else if(ListI.get(0)[0].length==2){
+        	for(Integer[][] tuple : ListI){
+        		for(int i=0;i<3;i++){
+        			int index = tuple[i][0];
+        			indices.add(index);
+        			
+        			textCoords[2*index] = 0;
+        			textCoords[2*index+1] = 0;
+        			
+        			Vector3f norm = ListN.get(tuple[i][1]);
+        			norms[3*index] = norm.x;
+        			norms[3*index+1] = norm.y;
+        			norms[3*index+2] = norm.z;
+        		}
+        	}
         }
-        //System.out.println("indices are: ");
-        int[] indices = new int[ListI.size()];
-        for(int i=0;i<ListI.size();i++){
-        	indices[i] = ListI.get(i)-1;
-    		//System.out.println(indices[i]+" ");
+        else{
+        	for(Integer[][] tuple : ListI){
+        		for(int i=0;i<3;i++){
+        			int index = tuple[i][0];
+        			indices.add(index);
+        			
+        			Vector2f texture = ListT.get(tuple[i][1]);
+        			textCoords[2*index] = texture.x;
+        			textCoords[2*index+1] = texture.y;
+        			
+        			Vector3f norm = ListN.get(tuple[i][2]);
+        			norms[3*index] = norm.x;
+        			norms[3*index+1] = norm.y;
+        			norms[3*index+2] = norm.z;
+        		}
+        	}
         }
-    	//System.out.println("\n");
-    	
-    	return new Mesh(positions, textCoords, norms, indices);
+        int[] indicesArray = new int[indices.size()];
+        for(int i=0;i<indices.size();i++){
+        	indicesArray[i] = indices.get(i);
+        }
+        		
+    	return new Mesh(positions, textCoords, norms, indicesArray);
     }
     
     /*public static void main(String[] args) throws Exception{

@@ -25,7 +25,7 @@ public class DummyGame implements IGameLogic {
     
     private static final float TRANSLATE_STEP = 0.1f;
     
-    private static final float ROTATION_STEP = 0.015f;
+    private static final float ROTATION_STEP = 0.032f;
     
     //private float rocket_acceleration = 0.1f;
     

@@ -110,16 +110,7 @@ public class Transformation {
         Vector3f position = gameItem.getPosition();
         modelMatrix.identity();
     	//// --- student code ---
-        Vector3f xAxis = new Vector3f(1,0,0);
-        Vector3f yAxis = new Vector3f(0,1,0);
-        Vector3f zAxis = new Vector3f(0,0,1);
-        /*Matrix4f test = new Matrix4f();
-    	test.identity();
         
-        //modelMatrix.translate(position);
-        Vector3f xAxis = new Vector3f(1,0,0);
-        Vector3f yAxis = new Vector3f(0,1,0);
-        Vector3f zAxis = new Vector3f(0,0,1);
         float sX = (float) Math.sin((float)Math.toRadians(rotation.x));
         float cX = (float) Math.cos((float)Math.toRadians(rotation.x));
         float sY = (float) Math.sin((float)Math.toRadians(rotation.y));
@@ -128,32 +119,28 @@ public class Transformation {
         float cZ = (float) Math.cos((float)Math.toRadians(rotation.z));
         
         Matrix4f rotationX = new Matrix4f(1,0,0,0,
-        								  0,cX,-sX,0,
-        								  0,sX,cX,0,
+        								  0,cX,sX,0,
+        								  0,-sX,cX,0,
         								  0,0,0,1);
-        Matrix4f rotationY = new Matrix4f(cY,0,sY,0,
+        Matrix4f rotationY = new Matrix4f(cY,0,-sY,0,
         								  0,1,-0,0,
-        								  -sY,0,cY,0,
+        								  sY,0,cY,0,
         								  0,0,0,1);
-        Matrix4f rotationZ = new Matrix4f(cZ,-sZ,0,0,
-				  						  sZ,cZ,0,0,
+        Matrix4f rotationZ = new Matrix4f(cZ,sZ,0,0,
+				  						  -sZ,cZ,0,0,
 				  						  0,0,1,0,
 				  						  0,0,0,1);
+        //modelMatrix.mul(rotationX);
         modelMatrix.mul(rotationX);
         modelMatrix.mul(rotationY);
         modelMatrix.mul(rotationZ);
         
-        Matrix4f translation = new Matrix4f(1,0,0,position.x,
-        									0,1,0,position.y,
-        									0,0,1,position.z,
-        									0,0,0,1);
+        Matrix4f translation = new Matrix4f(1,0,0,0,
+        									0,1,0,0,
+        									0,0,1,0,
+        									position.x,position.y,position.z,1);
         
-        modelMatrix.mul(translation);*/
-        
-        modelMatrix.rotate((float)Math.toRadians(rotation.x),xAxis);
-        modelMatrix.rotate((float)Math.toRadians(rotation.y),yAxis);
-        modelMatrix.rotate((float)Math.toRadians(rotation.z),zAxis);
-        modelMatrix.translate(position);
+        modelMatrix.mul(translation);
 
         return modelMatrix;
     }

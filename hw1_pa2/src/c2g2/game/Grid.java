@@ -25,8 +25,8 @@ public class Grid {
 			 				   {0,1,0,1,1,1,0},
 			 				   {0,1,1,1,0,0,0},
 			 				   {0,1,0,0,0,0,0},
-			 				   {0,1,1,1,1,1,1},
-			 				   {0,1,0,0,1,0,0}};
+			 				   {0,1,1,1,1,1,0},
+			 				   {0,1,0,0,0,0,0}};
  	 	scale = grid.length;
 	}
 	
@@ -56,14 +56,17 @@ public class Grid {
 		List<GameItem> output = new ArrayList<GameItem>();
 		System.out.println(grid.length);
 		scale = grid.length;
-		Mesh box = OBJLoader.loadMesh("src/resources/models/cube.obj");
-		Material material = new Material(new Vector3f(1f, 1f, 1f), 1f);
-        box.setMaterial(material);
+		Mesh wall = OBJLoader.loadMesh("src/resources/models/cube.obj");
+		Material material_wall = new Material(new Vector3f(1f, 0.8f, 0.8f), 1f);
+		wall.setMaterial(material_wall);
+		Mesh floor = OBJLoader.loadMesh("src/resources/models/cube.obj");
+		Material material_floor = new Material(new Vector3f(0.3f, 0.3f, 0.3f), 1f);
+		floor.setMaterial(material_floor);
 		
 		for(int i=0;i<scale;i++){
 			for(int j=1;j<=scale;j++){
 				if(grid[j-1][i]==0){
-					GameItem item = new GameItem(box);
+					GameItem item = new GameItem(wall);
 	        		item.setPosition(interval*i,interval*(scale-j),0);
 	        		output.add(item);
 				}
@@ -75,7 +78,11 @@ public class Grid {
 	        		item.setPosition(interval*i,interval*(scale-j),0.5f);
 	        		output.add(item);
 				}
-				
+				if(grid[j-1][i]==1){
+					GameItem item = new GameItem(floor);
+	        		item.setPosition(interval*i,interval*(scale-j),-2);
+	        		output.add(item);
+				}
 			}
 		}
 		//x and y axis
